@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Official Implementation of "Spectrum AUC Difference (SAUCD): Human-aligned 3D Shape Evaluation" (CVPR 2024).
 
 # Prepartion
@@ -31,7 +30,3 @@ python experiments/sota.py
 cd train_weights
 python main/train.py --config_file configs/debug.yaml
 ```
-=======
-# SAUCD
-The official implementation of "Spectrum AUC Difference (SAUCD): Human-aligned 3D Shape Evaluation" (CVPR2024).
->>>>>>> 84e790af34c8df02d17d05ad43d5555acdc36b84
