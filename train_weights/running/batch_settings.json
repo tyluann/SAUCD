@@ -1,0 +1,8 @@
+[
+    {
+        "model_w": ["wt3"],
+        "train_endEpoch": [100],
+        "model_weightBegin": [-0.05],
+        "train_lossWeight": {"plcc": [0.1], "srocc":[10], "smooth_dx": [0], "smooth_dv": [0], "smooth_da": [0], "regu": [1]}
+    }
+]

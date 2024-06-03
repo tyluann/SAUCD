@@ -1,0 +1,109 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "SOTA",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/sota.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            //"args": ["--vis"],
+        },
+        {
+            "name": "Train Weights",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_weights/main/train.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}/train_weights"
+            //"args": ["0", "animal", "building", "food", "furniture"],
+        },
+        {
+            "name": "Batch Train Weights",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_weights/running/batch_train.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}/train_weights",
+            "args": ["--experiments", "batch_settings.json",
+                "--nmp", "1",
+                "--full_mode", "-1",
+                "--shuffle",
+                "--wandb_proj", "MeshMetric_weight_test",
+                "--k_fold", "11"
+            ],
+        },
+        {
+            "name": "Voxelization",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/voxelization.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "args": ["--data", "intro",],
+        },
+        {
+            "name": "Intro",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/intro.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            // "args": ["--data", "intro",],
+        },
+        {
+            "name": "Compute_eigen",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/compute_eig.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--gpu_id", "1",
+                "--objs", "animal_building_food_furniture",
+                "--topo"
+            ],
+        },
+        {
+            "name": "Spectrum Filtering",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/spec_filtering.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "args": ["--area_norm"],
+        },
+        {
+            "name": "Plain mesh",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/plain_mesh.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+        }
+
+        
+    ]
+}

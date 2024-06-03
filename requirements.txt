@@ -1,0 +1,14 @@
+numpy
+pyvirtualdisplay
+tensorboard
+pymeshlab
+trimesh
+scikit-image
+mesh_to_sdf
+fvcore
+addict
+pandas
+matplotlib
+plyfile
+sqlalchemy
+PyOpenGL-accelerate

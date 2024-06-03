@@ -1,0 +1,12 @@
+.vscode/*
+!.vscode/launch.json
+
+**/output/*
+**/__pycache__/**
+
+train_weights/running/experiments/*
+
+render/renderer_utils*
+*.log
+.VSCodeCounter
+assets/

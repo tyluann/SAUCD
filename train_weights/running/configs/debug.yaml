@@ -1,0 +1,9 @@
+train_endEpoch: 100
+model_size: 20
+model_w: "wt3"
+model_weightBegin: -0.05
+# mode: "test"
+# test_model: "../../MeshMetric_code/train_weights/output/20221106_213807/20221107_001613_model_w__wt3__train_endEpoch__100__model_weightBegin__-0.05__train_lossWeight__plcc__0.1__srocc__10__smooth_dx__0__smooth_dv__0__smooth_da__0__regu__1_11_furniture/checkpoints/model_99_continue.ckpt"
+
+
+# dataset_args: {'Dataset':[['building']],}
